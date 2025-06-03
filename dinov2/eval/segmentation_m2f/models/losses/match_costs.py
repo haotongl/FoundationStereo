@@ -12,7 +12,7 @@ from ..builder import MATCH_COST
 @MATCH_COST.register_module()
 class ClassificationCost:
     """ClsSoftmaxCost.Borrow from
-    mmdet.core.bbox.match_costs.match_cost.ClassificationCost.
+    mmdet.foundation_stereo.bbox.match_costs.match_cost.ClassificationCost.
 
      Args:
          weight (int | float, optional): loss_weight

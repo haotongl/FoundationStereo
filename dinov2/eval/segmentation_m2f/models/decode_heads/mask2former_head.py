@@ -228,10 +228,10 @@ class Mask2FormerHead(BaseDecodeHead):
                     image.
         """
         # sample points
-        num_queries = cls_score.shape[0]
+        num_queries = cls_sfoundation_stereo.shape[0]
         num_gts = gt_labels.shape[0]
 
-        point_coords = torch.rand((1, self.num_points, 2), device=cls_score.device)
+        point_coords = torch.rand((1, self.num_points, 2), device=cls_sfoundation_stereo.device)
         # shape (num_queries, num_points)
         mask_points_pred = point_sample(mask_pred.unsqueeze(1), point_coords.repeat(num_queries, 1, 1)).squeeze(1)
         # shape (num_gts, num_points)

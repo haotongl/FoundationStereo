@@ -11,9 +11,9 @@ import os,sys
 code_dir = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(f'{code_dir}/../')
 from omegaconf import OmegaConf
-from core.utils.utils import InputPadder
+from foundation_stereo.utils.utils import InputPadder
 from Utils import *
-from core.foundation_stereo import *
+from foundation_stereo.foundation_stereo import *
 
 
 if __name__=="__main__":

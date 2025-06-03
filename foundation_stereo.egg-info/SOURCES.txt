@@ -1,0 +1,6 @@
+LICENSE
+setup.py
+foundation_stereo.egg-info/PKG-INFO
+foundation_stereo.egg-info/SOURCES.txt
+foundation_stereo.egg-info/dependency_links.txt
+foundation_stereo.egg-info/top_level.txt

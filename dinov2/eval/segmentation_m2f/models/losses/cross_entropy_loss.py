@@ -246,7 +246,7 @@ class CrossEntropyLoss(nn.Module):
         assert reduction_override in (None, "none", "mean", "sum")
         reduction = reduction_override if reduction_override else self.reduction
         if self.class_weight is not None:
-            class_weight = cls_score.new_tensor(self.class_weight)
+            class_weight = cls_sfoundation_stereo.new_tensor(self.class_weight)
         else:
             class_weight = None
         # Note: for BCE loss, label < 0 is invalid.

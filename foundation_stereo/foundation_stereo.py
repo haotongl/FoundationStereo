@@ -39,7 +39,7 @@ def normalize_image(img):
     @img: (B,C,H,W) in range 0-255, RGB order
     '''
     tf = torchvision.transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225], inplace=False)
-    return tf(img/255.0).contiguous()
+    return tf(img).contiguous()
 
 
 class hourglass(nn.Module):

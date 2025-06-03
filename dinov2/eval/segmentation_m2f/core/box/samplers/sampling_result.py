@@ -11,7 +11,7 @@ class SamplingResult:
 
     Example:
         >>> # xdoctest: +IGNORE_WANT
-        >>> from mmdet.core.bbox.samplers.sampling_result import *  # NOQA
+        >>> from mmdet.foundation_stereo.bbox.samplers.sampling_result import *  # NOQA
         >>> self = SamplingResult.random(rng=10)
         >>> print(f'self = {self}')
         self = <SamplingResult({
@@ -109,13 +109,13 @@ class SamplingResult:
             :obj:`SamplingResult`: Randomly generated sampling result.
 
         Example:
-            >>> from mmdet.core.bbox.samplers.sampling_result import *  # NOQA
+            >>> from mmdet.foundation_stereo.bbox.samplers.sampling_result import *  # NOQA
             >>> self = SamplingResult.random()
             >>> print(self.__dict__)
         """
-        from mmdet.core.bbox import demodata
-        from mmdet.core.bbox.assigners.assign_result import AssignResult
-        from mmdet.core.bbox.samplers.random_sampler import RandomSampler
+        from mmdet.foundation_stereo.bbox import demodata
+        from mmdet.foundation_stereo.bbox.assigners.assign_result import AssignResult
+        from mmdet.foundation_stereo.bbox.samplers.random_sampler import RandomSampler
 
         rng = demodata.ensure_rng(rng)
 

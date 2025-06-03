@@ -12,7 +12,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 code_dir = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(f'{code_dir}/../')
-from core.submodule import *
+from foundation_stereo.submodule import *
 from Utils import *
 import timm
 

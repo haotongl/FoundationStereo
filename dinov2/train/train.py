@@ -9,7 +9,7 @@ import math
 import os
 from functools import partial
 
-from fvcore.common.checkpoint import PeriodicCheckpointer
+from fvfoundation_stereo.common.checkpoint import PeriodicCheckpointer
 import torch
 
 from dinov2.data import SamplerType, make_data_loader, make_dataset

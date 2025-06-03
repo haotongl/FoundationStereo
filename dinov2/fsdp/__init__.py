@@ -9,7 +9,7 @@ from typing import Any
 import torch
 import dinov2.distributed as distributed
 from functools import partial
-from fvcore.common.checkpoint import Checkpointer
+from fvfoundation_stereo.common.checkpoint import Checkpointer
 from torch.distributed.fsdp import FullyShardedDataParallel as FSDP
 from torch.distributed.fsdp import ShardingStrategy
 from torch.distributed.fsdp import MixedPrecision
